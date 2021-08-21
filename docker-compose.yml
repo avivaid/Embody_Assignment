@@ -1,12 +1,13 @@
 version: '3'
-
 services:
-   web:
-      build: .
+   backend:
+      build: 
+         context: .
+         dockerfile: Dockerfile-B 
       volumes:
-         - .:/code
+         - ./backend:/code
       ports:
-         - 8000:8000
+         - 8000:8000  
       command: python /code/music_player/manage.py runserver 0.0.0.0:8000
       depends_on:
          - db
@@ -17,3 +18,14 @@ services:
          - POSTGRES_USER=postgres
          - POSTGRES_PASSWORD=postgres
       container_name: postgres_db
+   frontend:
+      build: 
+         context: .
+         dockerfile: Dockerfile-F    
+      volumes:
+         - ./frontend:/app
+      ports:
+         - "3000:3000"
+      depends_on:
+         - backend
+      command: npm start 
