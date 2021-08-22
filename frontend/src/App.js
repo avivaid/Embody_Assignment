@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import AudioPlayer from 'material-ui-audio-player';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is my new code and now I am testing it for changes in docker for you as well 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+  <AudioPlayer
+    elevation={1}
+    width="100%"
+    variation="default"
+    spacing={3}
+    download={true}
+    autoplay={true}
+    order="standart"
+    preload="auto"
+    loop={true}
+    src={'./assets/song.mp3'}
+  />
       </header>
+   
     </div>
   );
 }
