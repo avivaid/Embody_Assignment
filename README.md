@@ -7,10 +7,17 @@ Embody_Assignment
 
 ## Getting started 
 * [Install docker and docker-compose](https://docs.docker.com/get-docker/)
-* Build the docker contanier with the command 
-``` docker-compose build web ```
-* You can run the docker contanier with the command 
-```sudo docker-compose up ```
+* Build the docker backedn contanier with the command 
+``` docker-compose build backend ```
+* Build the docker frontend contanier with the command 
+``` docker-compose build frontend ```
 * You can run the docker contanier as a bash shell with the command 
-```docker-compose run web /bin/bash ```
+```docker-compose run contanier-name /bin/bash ``` or ```docker-compose run contanier-name bash ```
+* Build the entire thing
+```docker-compose up --build```
+
+
+* You can bring up the container with the command 
+```sudo docker-compose up ```
+The backend django rest api can be accessed on loacalhost:8000 and the front react app can be accessed on localhost:3000
 
