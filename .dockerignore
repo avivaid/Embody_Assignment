@@ -1,5 +1,6 @@
 .git 
 ./frontend/.node_modules
+./backend/data
 .gitignore
 .dockerignore
 .Dockefile-B

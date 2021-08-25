@@ -15,6 +15,12 @@ Embody_Assignment
 ```docker-compose run contanier-name /bin/bash ``` or ```docker-compose run contanier-name bash ```
 * Build the entire thing
 ```docker-compose up --build```
+* You might have to run migratiuions. 
+```docker-compose run backend bash ```
+```cd music_player ```
+``` python manage.py makemigrations```
+```python manage.py migrate ```
+
 
 
 * You can bring up the container with the command 
