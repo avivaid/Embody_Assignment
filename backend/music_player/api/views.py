@@ -3,6 +3,7 @@ from django.shortcuts import render
 from rest_framework import status, generics
 from .models import UserComments
 from .serializers import UserCommentsSerializer
+from .serializers import UserCommentsSerializerPost
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
@@ -18,7 +19,7 @@ class UserCommentsApiViewLatest(generics.ListAPIView):
        
     
 class UserCommentsApiViewPost(APIView):
-    serializer_class = UserCommentsSerializer
+    serializer_class = UserCommentsSerializerPost
     def post (self, request, format=None): 
         requestData = self.serializer_class (data = request.data)
         if requestData.is_valid(): 
