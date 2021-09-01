@@ -14,15 +14,15 @@ Embody_Assignment
 * You can run the docker contanier as a bash shell with the command 
 ```docker-compose run contanier-name /bin/bash ``` or ```docker-compose run contanier-name bash ```
 * Build the entire thing
-  ** For some reason the npm packages are not getting installed in the docker container so before buliding the project install the frontend packages using npm 
+  ** For some reason the npm packages are not getting installed in the docker container so before buliding the project install the frontend packages using npm fllow tje steps        below
   
-```cd frontend```
+      ```cd frontend```
 
-```npm install```
+      ```npm install```
 
-```cd ..```
+      ```cd ..```
 
-```docker-compose up --build```
+      ```docker-compose up --build```
 
 
 
