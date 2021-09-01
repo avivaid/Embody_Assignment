@@ -16,13 +16,13 @@ Embody_Assignment
 * Build the entire thing
   ** For some reason the npm packages are not getting installed in the docker container so before buliding the project install the frontend packages using npm fllow tje steps        below
   
-      ```cd frontend```
+      cd frontend
 
-      ```npm install```
+      npm install
 
-      ```cd ..```
+      cd ..
 
-      ```docker-compose up --build```
+      docker-compose up --build
 
 
 
