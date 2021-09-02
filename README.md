@@ -39,8 +39,7 @@ Embody_Assignment
 The backend django rest api can be accessed on loacalhost:8000 and the front react app can be accessed on localhost:3000
 
 
-* You can bring up the container with the command 
-If you having issue with the frontend service you can run it outside the docker contanier. To do that remove the frontend config from docker-compose.yml file and that run the dokcer contanier. Go the front end dir and start the frontend localy using flowing commands: 
+* If you having issue with the frontend service you can run it outside the docker contanier. To do that remove the frontend config from docker-compose.yml file and that run the dokcer contanier. Go the front end dir and start the frontend localy using flowing commands: 
     
     npm install 
     npm run serve
